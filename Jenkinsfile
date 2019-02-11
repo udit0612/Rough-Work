@@ -6,5 +6,10 @@ pipeline {
         echo 'HI its initializing '
       }
     }
+    stage('Test') {
+      steps {
+        junit './gradlew check'
+      }
+    }
   }
 }
