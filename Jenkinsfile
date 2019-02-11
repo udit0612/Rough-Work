@@ -11,5 +11,15 @@ pipeline {
         sh 'mvn clean '
       }
     }
+    stage('Build') {
+      steps {
+        sh 'mvn -Dmaven.test.faliure.ignore.true install '
+      }
+    }
+    stage('Report') {
+      steps {
+        junit 'target/logs '
+      }
+    }
   }
 }
