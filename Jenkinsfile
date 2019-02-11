@@ -1,9 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'maven3.3.9-jdk-8'
+    }
+
+  }
   stages {
     stage('initialize') {
       steps {
-        echo 'This is the minimal pipeline'
+        sh 'mvn clean '
       }
     }
   }
