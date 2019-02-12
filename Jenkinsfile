@@ -6,10 +6,5 @@ pipeline {
         echo 'Hello app is initializing'
       }
     }
-    stage('clean') {
-      steps {
-        sh 'yum clean all'
-      }
-    }
   }
 }
