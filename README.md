@@ -1,4 +1,4 @@
-# Couses Rest API   (For Testin Purpose only)
+# Couses Rest API  
 ## Welcome to Couse Wizard
 
 This is the demo app build in spring boot containg code about creation , deletion and updatation of courses
