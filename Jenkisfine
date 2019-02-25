@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying with ci/cd '
                 echo 'Deployed after testing'
             }
         }
