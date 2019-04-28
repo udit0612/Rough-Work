@@ -14,14 +14,14 @@ public class SimpleUgiApplication {
 
 	public static void main(String[] args) throws IOException {
 		/*
-		 * final String user = "hive/dbr-hadoop-hive@DBRESEARCH.COM"; final String
+		 * final String user = "hive/dbr-hadoop-hive@EXAMPLE.COM"; final String
 		 * keyPath = "/opt/manhattan/current/shareddata/hive/hdfs.keytab"; Configuration
 		 * conf = new Configuration();
 		 * System.out.println("In case of kerberos authentication");
 		 * conf.set("fs.defaultFS","hdfs://dbr-hadoop-hive:9000");
 		 * conf.set("hadoop.security.authentication", "kerberos");
 		 * System.setProperty("java.security.krb5.kdc", "dbr-hadoop-hive");
-		 * System.setProperty("java.security.krb5.realm", "DBRESEARCH.COM");
+		 * System.setProperty("java.security.krb5.realm", "EXAMPLE.COM");
 		 * 
 		 * 
 		 * UserGroupInformation.setConfiguration(conf);
