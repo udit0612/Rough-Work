@@ -13,9 +13,26 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class SimpleUgiApplication {
 
 	public static void main(String[] args) throws IOException {
+		/*
+		 * final String user = "hive/dbr-hadoop-hive@DBRESEARCH.COM"; final String
+		 * keyPath = "/opt/manhattan/current/shareddata/hive/hdfs.keytab"; Configuration
+		 * conf = new Configuration();
+		 * System.out.println("In case of kerberos authentication");
+		 * conf.set("fs.defaultFS","hdfs://dbr-hadoop-hive:9000");
+		 * conf.set("hadoop.security.authentication", "kerberos");
+		 * System.setProperty("java.security.krb5.kdc", "dbr-hadoop-hive");
+		 * System.setProperty("java.security.krb5.realm", "DBRESEARCH.COM");
+		 * 
+		 * 
+		 * UserGroupInformation.setConfiguration(conf);
+		 * UserGroupInformation.loginUserFromKeytab(user, keyPath);
+		 */
+
+		 
 		 System.setProperty("hadoop.home.dir", "C:\\Users\\DBR-1\\Downloads\\Microsoft.SkypeApp_kzf8qxf38zg5c!App\\All\\hadoop-winutils-2.6.0\\");
 		Configuration conf = new Configuration();
 		conf.set("fs.defaultFS","hdfs://192.168.99.101:8020");
+		//conf.set("fs.defaultFS", "webhdfs://192.168.99.101:50070");  webhdfs
 		FileSystem fs = FileSystem.get(conf);
 		
 		FileStatus[] fsStatus = fs.listStatus(new Path("/"));
