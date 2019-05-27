@@ -16,6 +16,7 @@ public class SimpleUgiApplication {
 		/*
 		 * final String user = "Principal Name"; final String
 		 * keyPath = "keytab location"; Configuration
+
 		 * conf = new Configuration();
 		 * System.out.println("In case of kerberos authentication");
 		 * conf.set("fs.defaultFS","hdfs://dbr-hadoop-hive:9000");
